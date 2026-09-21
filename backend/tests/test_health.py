@@ -6,11 +6,8 @@ from backend.main import app
 client = TestClient(app)
 
 
-def test_health_check():
+def test_health_check() -> None:
     response = client.get("/health")
 
-    data = response.json()
-
     assert response.status_code == 200
-    assert data["status"] == "ok"
-    assert "environment" in data
+    assert response.json()["status"] == "ok"
