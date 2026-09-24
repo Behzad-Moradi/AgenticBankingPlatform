@@ -5,7 +5,13 @@ from backend.agents.graph import graph
 from backend.api.dependencies import get_current_customer
 from backend.services.document_extraction import extract_driver_licence
 from backend.models.customer import Customer
-from backend.schemas.chat import ChatRequest, ChatResponse, ChatResumeRequest, InterruptInfo
+from backend.schemas.chat import (
+    ChatRequest,
+    ChatResponse,
+    ChatResumeRequest,
+    DocumentUploadResponse,
+    InterruptInfo,
+)
 from langgraph.types import Command
 from backend.agents.workflows.account_opening import verify_driver_licence_details
 from backend.services.document_extraction import extract_driver_licence
@@ -44,6 +50,7 @@ def chat(
         ),
     )
     interrupts = result.get("__interrupt__", [])
+    account_opening_stage = result.get("account_opening_stage")
     
     if interrupts:
         interrupt_value = interrupts[0].value
@@ -55,6 +62,10 @@ def chat(
             interrupt=InterruptInfo(
                 **interrupt_value
             ),
+            account_opening_stage=account_opening_stage,
+            requires_document_upload=(
+                account_opening_stage == "document_upload"
+            ),
         )
 
     return ChatResponse(
@@ -62,6 +73,10 @@ def chat(
         thread_id=request.thread_id,
         sources=result.get("sources", []),
         interrupt=None,
+        account_opening_stage=account_opening_stage,
+        requires_document_upload=(
+            account_opening_stage == "document_upload"
+        ),
     )
     
 @router.post(
@@ -98,9 +113,16 @@ def resume_chat(
         thread_id=request.thread_id,
         sources=result.get("sources", []),
         interrupt=None,
+        account_opening_stage=result.get("account_opening_stage"),
+        requires_document_upload=(
+            result.get("account_opening_stage") == "document_upload"
+        ),
     )
     
-@router.post("/account-opening/document")
+@router.post(
+    "/account-opening/document",
+    response_model=DocumentUploadResponse,
+)
 async def upload_account_opening_document(
     thread_id: str,
     file: UploadFile = File(...),
@@ -211,6 +233,8 @@ async def upload_account_opening_document(
             ),
             "thread_id": thread_id,
             "verified": False,
+            "account_opening_stage": "document_upload",
+            "requires_document_upload": True,
         }
 
     return {
@@ -220,5 +244,6 @@ async def upload_account_opening_document(
         ),
         "thread_id": thread_id,
         "verified": True,
+        "account_opening_stage": "customer_confirmation",
+        "requires_document_upload": False,
     }
-    
