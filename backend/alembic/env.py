@@ -5,7 +5,10 @@ from sqlalchemy import engine_from_config, pool
 from alembic import context
 from backend.core.config import settings
 from backend.db.base import Base
+from backend.models.account import Account  # noqa: F401
 from backend.models.customer import Customer  # noqa: F401
+from backend.models.transaction import Transaction  # noqa: F401
+from backend.models.card import Card  # noqa: F401
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

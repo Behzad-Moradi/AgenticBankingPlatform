@@ -1,0 +1,205 @@
+[
+  {
+    "question": "How much does it cost to send money overseas?",
+    "expected_source": "international_transfers.md",
+    "reference_answer": "The standard international transfer fee is AUD 10."
+  },
+  {
+    "question": "What is the international transfer fee?",
+    "expected_source": "international_transfers.md",
+    "reference_answer": "The standard international transfer fee is AUD 10."
+  },
+  {
+    "question": "Do you charge for international transfers?",
+    "expected_source": "international_transfers.md",
+    "reference_answer": "Yes. The standard international transfer fee is AUD 10."
+  },
+  {
+    "question": "If I transfer money to another country, what fee will I pay?",
+    "expected_source": "international_transfers.md",
+    "reference_answer": "The standard international transfer fee is AUD 10."
+  },
+  {
+    "question": "How long does an international transfer take?",
+    "expected_source": "international_transfers.md",
+    "reference_answer": "International transfers normally take between 1 and 3 business days to reach the recipient."
+  },
+  {
+    "question": "When should an overseas transfer arrive?",
+    "expected_source": "international_transfers.md",
+    "reference_answer": "International transfers normally take between 1 and 3 business days to reach the recipient."
+  },
+  {
+    "question": "Can other banks charge fees on an international transfer?",
+    "expected_source": "international_transfers.md",
+    "reference_answer": "Yes. Additional fees may be charged by intermediary or recipient banks."
+  },
+  {
+    "question": "Could there be extra charges besides the AUD 10 transfer fee?",
+    "expected_source": "international_transfers.md",
+    "reference_answer": "Yes. Additional fees may be charged by intermediary or recipient banks."
+  },
+  {
+    "question": "Can I make an international transfer online?",
+    "expected_source": "international_transfers.md",
+    "reference_answer": "Yes. Customers can send international transfers through online banking."
+  },
+  {
+    "question": "Does the exchange rate include a foreign exchange margin?",
+    "expected_source": "international_transfers.md",
+    "reference_answer": "Yes. The exchange rate shown before confirmation includes the applicable foreign exchange margin."
+  },
+
+  {
+    "question": "What should I do if my card is stolen?",
+    "expected_source": "card_security.md",
+    "reference_answer": "A stolen card should be reported immediately."
+  },
+  {
+    "question": "I can't find my bank card. What should I do?",
+    "expected_source": "card_security.md",
+    "reference_answer": "A lost card should be reported immediately."
+  },
+  {
+    "question": "Someone stole my card. Should I wait to see if it turns up?",
+    "expected_source": "card_security.md",
+    "reference_answer": "No. A stolen card should be reported immediately."
+  },
+  {
+    "question": "What should I do if I think someone has compromised my card?",
+    "expected_source": "card_security.md",
+    "reference_answer": "A card suspected of being compromised should be reported immediately."
+  },
+  {
+    "question": "Can I temporarily freeze my card?",
+    "expected_source": "card_security.md",
+    "reference_answer": "Yes. A card can be temporarily frozen while the customer investigates suspicious activity."
+  },
+  {
+    "question": "I'm not sure whether my card has been compromised. Can I freeze it while I check?",
+    "expected_source": "card_security.md",
+    "reference_answer": "Yes. A card can be temporarily frozen while the customer investigates suspicious activity."
+  },
+  {
+    "question": "What happens when I freeze my card?",
+    "expected_source": "card_security.md",
+    "reference_answer": "Freezing a card prevents new card purchases but does not necessarily stop previously authorised transactions."
+  },
+  {
+    "question": "Will freezing my card stop all transactions?",
+    "expected_source": "card_security.md",
+    "reference_answer": "No. Freezing prevents new card purchases but does not necessarily stop previously authorised transactions."
+  },
+  {
+    "question": "What should I do if I don't recognise a transaction?",
+    "expected_source": "card_security.md",
+    "reference_answer": "An unrecognised transaction should be reported through the bank's dispute process."
+  },
+  {
+    "question": "There's a purchase on my account that I didn't make. What should I do?",
+    "expected_source": "card_security.md",
+    "reference_answer": "An unrecognised transaction should be reported through the bank's dispute process."
+  },
+
+  {
+    "question": "Does the savings account have a monthly fee?",
+    "expected_source": "account_fees.md",
+    "reference_answer": "No. The Savings Account has no monthly account-keeping fee."
+  },
+  {
+    "question": "How much is the monthly account-keeping fee for a Savings Account?",
+    "expected_source": "account_fees.md",
+    "reference_answer": "The Savings Account has no monthly account-keeping fee."
+  },
+  {
+    "question": "Do I have to pay every month just to keep my savings account open?",
+    "expected_source": "account_fees.md",
+    "reference_answer": "No. The Savings Account has no monthly account-keeping fee."
+  },
+  {
+    "question": "Does the Everyday Account charge a monthly account-keeping fee?",
+    "expected_source": "account_fees.md",
+    "reference_answer": "No. The Everyday Account has no monthly account-keeping fee."
+  },
+  {
+    "question": "Is the Everyday Account free of monthly account fees?",
+    "expected_source": "account_fees.md",
+    "reference_answer": "Yes. The Everyday Account has no monthly account-keeping fee."
+  },
+  {
+    "question": "Do I pay a fee to transfer money between my own accounts?",
+    "expected_source": "account_fees.md",
+    "reference_answer": "No. Customers can transfer funds between their own Everyday and Savings accounts without a transfer fee."
+  },
+  {
+    "question": "Can I move money from my Everyday Account to my Savings Account for free?",
+    "expected_source": "account_fees.md",
+    "reference_answer": "Yes. Customers can transfer funds between their own Everyday and Savings accounts without a transfer fee."
+  },
+  {
+    "question": "Are withdrawals from the bank's own ATMs free?",
+    "expected_source": "account_fees.md",
+    "reference_answer": "Yes. ATM withdrawals made through the bank's own ATM network are free."
+  },
+  {
+    "question": "Will your bank charge me for using one of its own ATMs?",
+    "expected_source": "account_fees.md",
+    "reference_answer": "No. ATM withdrawals made through the bank's own ATM network are free."
+  },
+  {
+    "question": "Can I be charged when using another company's ATM?",
+    "expected_source": "account_fees.md",
+    "reference_answer": "Yes. Withdrawals from third-party ATMs may incur a fee charged by the ATM operator."
+  },
+
+  {
+    "question": "Does the bank provide cryptocurrency custody?",
+    "expected_source": null,
+    "reference_answer": null
+  },
+  {
+    "question": "Can I buy Bitcoin through the bank?",
+    "expected_source": null,
+    "reference_answer": null
+  },
+  {
+    "question": "Does the bank offer home loans?",
+    "expected_source": null,
+    "reference_answer": null
+  },
+  {
+    "question": "What is the interest rate on a home loan?",
+    "expected_source": null,
+    "reference_answer": null
+  },
+  {
+    "question": "What interest rate do I earn on my Savings Account?",
+    "expected_source": null,
+    "reference_answer": null
+  },
+  {
+    "question": "Can I open a joint account with my partner?",
+    "expected_source": null,
+    "reference_answer": null
+  },
+  {
+    "question": "How much can I withdraw from an ATM each day?",
+    "expected_source": null,
+    "reference_answer": null
+  },
+  {
+    "question": "Can I transfer money to another Australian bank for free?",
+    "expected_source": null,
+    "reference_answer": null
+  },
+  {
+    "question": "What phone number should I call if my card is stolen?",
+    "expected_source": null,
+    "reference_answer": null
+  },
+  {
+    "question": "Which countries can I send international transfers to?",
+    "expected_source": null,
+    "reference_answer": null
+  }
+]

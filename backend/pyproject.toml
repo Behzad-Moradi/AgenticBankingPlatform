@@ -6,14 +6,27 @@ readme = "README.md"
 authors = [
     { name = "Behzad", email = "b.moradi@student.unimelb.edu.au" }
 ]
-requires-python = ">=3.11"
+requires-python = ">=3.11,<3.12"
 dependencies = [
     "alembic>=1.20.0",
+    "email-validator>=2.3.0",
     "fastapi>=0.141.1",
+    "langchain>=1.4.2",
+    "langchain-community==0.4.1",
+    "langchain-openai>=1.6.3",
+    "langchain-text-splitters>=1.1.2",
+    "langgraph>=1.2.12",
     "psycopg[binary]>=3.3.6",
+    "pwdlib[argon2]>=0.3.1",
     "pydantic-settings>=2.15.0",
+    "pyjwt>=2.14.0",
+    "pymupdf>=1.28.2",
+    "pypdf>=6.19.0",
+    "python-multipart>=0.0.32",
+    "ragas==0.3.9",
     "sqlalchemy>=2.0.54",
     "uvicorn[standard]>=0.53.0",
+    "weaviate-client>=4.23.1",
 ]
 
 [project.scripts]
